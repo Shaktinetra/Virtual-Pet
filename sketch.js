@@ -1,4 +1,4 @@
-var dog, dogImg, happyDogImg, happyDog, database, food, foodStock
+var dog, dogImg, happyDogImg, database, food, foodStock
 
 function preload() {
   dogImg = loadImage("dogImg.png");
@@ -11,12 +11,6 @@ function setup() {
   fill(255);
 
   dog = createSprite(250, 250, 20, 20);
-  happyDog = createSprite(250, 250, 20, 20);
-  happyDog.visible = false;
-
-  happyDog.addImage("happy", happyDogImg);
-  happyDog.scale = 0.25;
-
   dog.addImage("dog", dogImg);
   dog.scale = 0.25;
 
@@ -33,8 +27,7 @@ function draw() {
 
   if (keyWentDown(UP_ARROW)) {
     writeStock(food);
-    happyDog.visible = true;
-    dog.visible = false;
+    dog.addImage("happy", happyDogImg);
     foodStock = foodStock - 1;
   }
 
