@@ -1,4 +1,4 @@
-var dog, dogImg, happyDogImg, database, food, foodStock
+var dog, dogImg, happyDogImg, database, food, foodStock;
 
 function preload() {
   dogImg = loadImage("dogImg.png");
