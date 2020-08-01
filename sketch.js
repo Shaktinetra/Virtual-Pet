@@ -28,7 +28,7 @@ function draw() {
 
   if (keyWentDown(UP_ARROW)) {
     writeStock(food);
-    dog.changeAnimation("happy", happyDogImg);
+    dog.changeImage("happy", happyDogImg);
     foodStock = foodStock - 1;
   }
 
