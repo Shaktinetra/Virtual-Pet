@@ -25,7 +25,7 @@ function draw() {
   background(46, 139, 87);
   text ("Note: Press The Up Arrow", 10, 30);
   
-  if (foodStock.exists()) {
+  if (foodStock !== undefined) {
       text("Food Remaining: " + food, 250, 100);
   }
 
