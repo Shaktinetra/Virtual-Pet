@@ -12,6 +12,7 @@ function setup() {
 
   dog = createSprite(250, 250, 20, 20);
   dog.addImage("dog", dogImg);
+  dog.addImage("happy", happyDogImg);
   dog.scale = 0.25;
 
   database = firebase.database();
