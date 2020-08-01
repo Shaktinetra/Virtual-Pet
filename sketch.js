@@ -24,7 +24,10 @@ function setup() {
 function draw() {  
   background(46, 139, 87);
   text ("Note: Press The Up Arrow", 10, 30);
-  text("Food Remaining: " + food, 250, 100);
+  
+  if (foodStock.exists()) {
+      text("Food Remaining: " + food, 250, 100);
+  }
 
   if (keyWentDown(UP_ARROW)) {
     writeStock(food);
